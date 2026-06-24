@@ -1,0 +1,36 @@
+root@ip-10-0-27-27:/var/www/html# cat index.html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>My Simple Site</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Welcome to My Website</h1>
+    <p>A simple and beautiful PHP-powered website</p>
+  </header>
+
+  <main>
+    <section>
+      <h2>About</h2>
+      <p>This is a sample project running in a Docker three-tier architecture using NGINX, PHP, and MySQL.</p>
+    </section>
+
+    <section>
+      <h2>Contact Me</h2>
+      <form action="contact.php" method="POST">
+        <input type="text" name="name" placeholder="Your name" required><br>
+        <input type="email" name="email" placeholder="Your email" required><br>
+        <textarea name="message" placeholder="Your message" required></textarea><br>
+        <input type="submit" value="Send">
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 MyWebsite. All rights reserved.</p>
+  </footer>
+</body>
+</html>
